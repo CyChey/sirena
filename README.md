@@ -1,1 +1,1 @@
-Sirena - Salon De Beauté
+<h1>Sirena - Salon De Beauté</h1>

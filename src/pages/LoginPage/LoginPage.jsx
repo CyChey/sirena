@@ -28,3 +28,4 @@ class LoginPage extends Component {
             alert('Invalid Credentials!');
         }
     };
+}

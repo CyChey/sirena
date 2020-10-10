@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import './LoginPage.css'
+import userService from '../../utils/userService';
+import './Login.css'
 
-class LoginPage extends Component {
+
+
+export default class LoginPage extends Component {
 
     state = {
         email: '',
@@ -28,4 +31,8 @@ class LoginPage extends Component {
             alert('Invalid Credentials!');
         }
     };
+
+    render() {
+        return <h1>Login</h1>;
+    }
 }

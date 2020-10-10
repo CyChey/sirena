@@ -3,5 +3,5 @@ import userService from '../../utils/userService';
 import './Profile.css';
 
 export default function Profile() {
-    return null;
+    return <h1>Profile</h1>
 }

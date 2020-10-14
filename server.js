@@ -8,6 +8,13 @@ const app = express();
 require('dotenv').config();
 require('./config/database');
 
+app.use(logger('dev'));
+app.use(express.json());
+
+app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
+app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.json());
+
 app.use(require('./config/auth'));
 
 const usersRoutes = require('./routes/api/users');
@@ -15,12 +22,7 @@ const appointmentRoutes = require('./routes/api/appointments');
 
 // const profileRoutes = require('./routes/appointments');
 
-app.use(logger('dev'));
-app.use(express.json());
 
-app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
-app.use(express.static(path.join(__dirname, 'build')));
-app.use(express.json());
 
 // Put API routes here, before the "catch all" route
 app.use('/api/users', usersRoutes);

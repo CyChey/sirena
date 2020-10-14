@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Helmet } from "react-helmet";
 import SignupForm from '../../components/SignUpForm/SignupForm';
 import Typography from '@material-ui/core/Typography';
-import './SignupPage.css';
+import './SignUpPage.css';
 
 class SignupPage extends Component {
 

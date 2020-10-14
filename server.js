@@ -8,8 +8,11 @@ const app = express();
 require('dotenv').config();
 require('./config/database');
 
+app.use(require('./config/auth'));
+
 const usersRoutes = require('./routes/api/users');
 const appointmentRoutes = require('./routes/api/appointments');
+
 // const profileRoutes = require('./routes/appointments');
 
 app.use(logger('dev'));
@@ -24,7 +27,7 @@ app.use('/api/users', usersRoutes);
 app.use('/appointments', appointmentRoutes);
 // app.use('/profile', profileRoutes);
 // Load config/auth
-app.use(require('./config/auth'));
+
 
 // The following "catch all" route (note the *)is necessary
 // for a SPA's client-side routing to properly work 
@@ -39,3 +42,5 @@ const port = process.env.PORT || 3001;
 app.listen(port, function () {
     console.log(`Express app running on port ${port}`)
 });
+
+

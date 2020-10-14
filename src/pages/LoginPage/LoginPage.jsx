@@ -38,7 +38,7 @@ class LoginPage extends Component {
         return (
             <div className="LoginPage">
                 <Helmet>
-                    <style>{'body { background-color: #557050; }'}</style>
+                    <style>{'body { background-color: #e3e2e1; }'}</style>
                 </Helmet>
                 <Typography className="loginTitle">Log in to schedule an appointment</Typography>
                 <form className="form-horizontal" onSubmit={this.handleSubmit} >

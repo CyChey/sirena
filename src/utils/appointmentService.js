@@ -1,9 +1,10 @@
-import tokenService from './tokenService';
+import * as tokenService from './tokenService';
 
 const BASE_URL = '/appointments/';
 
 // index
 export function getAllAppointments() {
+    console.log('Getting appointments', tokenService.getTokenFromLocalStorage());
     return fetch(BASE_URL, {
         method: 'GET',
         headers: {
@@ -11,7 +12,10 @@ export function getAllAppointments() {
             'Authorization': `Bearer ${tokenService.getTokenFromLocalStorage()}`
         }
     })
-        .then(allAppointments => allAppointments.json());
+        .then(allAppointments => allAppointments.json())
+        .catch(e => {
+            window.history.replaceState(null, 'login', '/login')
+        });
 }
 
 // create

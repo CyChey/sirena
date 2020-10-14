@@ -50,3 +50,4 @@ function ServiceCard({ serviceFromParent }) {
     )
 }
 
+export default ServiceCard;

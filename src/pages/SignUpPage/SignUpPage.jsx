@@ -1,7 +1,29 @@
 import React, { Component } from 'react';
-import SignupForm from '../../components/SignupForm/SignupForm';
-import './SignUpPage.css';
+import { Helmet } from "react-helmet";
+import SignupForm from '../../components/SignUpForm/SignupForm';
+import Typography from '@material-ui/core/Typography';
+import './SignupPage.css';
 
-export default function SignUpPage() {
-    return <h1>SignUp</h1>;
+class SignupPage extends Component {
+
+    state = { message: '' }
+
+    updateMessage = (msg) => {
+        this.setState({ message: msg });
+    }
+
+    render() {
+        return (
+            <div className='SignupPage'>
+                <Helmet>
+                    <style>{'body { background-color: #557050; }'}</style>
+                </Helmet>
+                <Typography className="loginTitle">Sign up to schedule an appointment</Typography>
+                <SignupForm {...this.props} updateMessage={this.updateMessage} />
+                <p>{this.state.message}</p>
+            </div>
+        );
+    }
 }
+
+export default SignupPage;

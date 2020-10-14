@@ -1,7 +1,33 @@
 import React from 'react';
 import userService from '../../utils/userService';
+import AppointmentCard from '../../components/AppointmentCard/AppointmentCard';
+import Typography from '@material-ui/core/Typography';
 import './Profile.css';
 
-export default function Profile() {
-    return <h1>Profile</h1>
+function Profile({ appointmentsFromParent, handleDeleteAppointment }) {
+    return (
+        <>
+            <div className="profileBanner">
+                <Typography
+                    className="profileName"
+                    variant="h5"
+                    style={{ color: '#F2E5D6' }}
+                >{userService.getUser().name ? `HELLO, ${userService.getUser().name.toUpperCase()}` : ''}</Typography>
+            </div>
+            <div>
+                <Typography
+                    style={{ color: '#758B71' }}
+                    className="upcoming"
+                >UPCOMING APPOINTMENTS</Typography>
+                {appointmentsFromParent.map(appointment =>
+                    <AppointmentCard
+                        key={appointment._id}
+                        appointmentFromParent={appointment}
+                        handleDeleteAppointment={handleDeleteAppointment}
+                    />
+                )}
+            </div>
+        </>
+    )
 }
+export default Profile;

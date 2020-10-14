@@ -1,0 +1,27 @@
+.LoginPage{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20vh;
+
+}
+
+.form-control {
+    border: none;
+}
+
+.loginTitle {
+    padding-bottom: 2vh;
+}
+
+.loginBtn {
+    margin-top: 1vh;
+    border: 1px solid black;
+    padding: 2px 5px;
+
+}
+
+.form-group {
+    margin: 10px;
+}

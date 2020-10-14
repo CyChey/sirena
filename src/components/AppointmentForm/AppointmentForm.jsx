@@ -91,7 +91,12 @@ export default function AppointmentForm(props) {
                 >
                     <MenuItem>
                     </MenuItem>
-
+                    <MenuItem value="massage">Reflexology Treatment</MenuItem>
+                    <MenuItem value="stone massage">Hot Stone Therapy Massage</MenuItem>
+                    <MenuItem value="haircut">Hair cut</MenuItem>
+                    <MenuItem value="facial">Facial</MenuItem>
+                    <MenuItem value="pedicure">Pedicure</MenuItem>
+                    <MenuItem value="manicure">Manicure</MenuItem>
                 </Select>
             </div>
             <div className="formSections">

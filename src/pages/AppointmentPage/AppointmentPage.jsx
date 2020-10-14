@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: theme.spacing(1),
         minWidth: 10,
-        color: '#1c788f'
+        color: '#758B71'
     },
 }));
 
@@ -58,7 +58,7 @@ export default function AppointmentForm(props) {
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#1c788f"
+                        color: "#758B71"
                     }}>When would you like to schedule your appointment?</Typography>
                 <TextField
                     id="datetime-local"
@@ -76,7 +76,7 @@ export default function AppointmentForm(props) {
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#1c788f"
+                        color: "#758B71"
                     }}>What service are your booking?</Typography>
                 <Select
                     className="form1"
@@ -92,13 +92,18 @@ export default function AppointmentForm(props) {
                 >
                     <MenuItem>
                     </MenuItem>
-
+                    <MenuItem value="massage">Reflexology Treatment</MenuItem>
+                    <MenuItem value="stone massage">Hot Stone Therapy Massage</MenuItem>
+                    <MenuItem value="haircut">Hair cut</MenuItem>
+                    <MenuItem value="facial">Facial</MenuItem>
+                    <MenuItem value="pedicure">Pedicure</MenuItem>
+                    <MenuItem value="manicure">Manicure</MenuItem>
                 </Select>
             </div>
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#1c778f"
+                        color: "#758B71"
                     }}>Anything else we should know?</Typography>
                 <TextField
                     name="notes"

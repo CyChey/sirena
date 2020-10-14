@@ -1,6 +1,6 @@
 
 
-function setToken(token) {
+export function setToken(token) {
     if (token) {
         localStorage.setItem('token', token);
     } else {
@@ -8,7 +8,7 @@ function setToken(token) {
     }
 }
 
-function getToken() {
+export function getToken() {
     let token = localStorage.getItem('token');
     if (token) {
         // Check if expired, remove if it is
@@ -22,12 +22,14 @@ function getToken() {
     return token;
 }
 
-function getUserFromToken() {
+export const getTokenFromLocalStorage = getToken;
+
+export function getUserFromToken() {
     const token = getToken();
     return token ? JSON.parse(atob(token.split('.')[1])).user : null;
 }
 
-function removeToken() {
+export function removeToken() {
     localStorage.removeItem('token');
 }
 

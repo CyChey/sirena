@@ -97,9 +97,12 @@ class App extends Component {
 
   handleDeleteAppointment = async idOfAppointmentToDelete => {
     await appointmentService.deleteAppointmentAPI(idOfAppointmentToDelete);
-    this.setState(state => ({
-      appointmentService: state.appointments.filter(appointment => appointment._id !== idOfAppointmentToDelete)
-    }, this.getAllAppointments()));
+    this.setState(
+      state => ({
+        appointmentService: state.appointments.filter(appointment => appointment._id !== idOfAppointmentToDelete)
+      }),
+      () => this.getAllAppointments()
+    );
   }
 
   handleUpdateAppointment = async updatedAppointmentData => {

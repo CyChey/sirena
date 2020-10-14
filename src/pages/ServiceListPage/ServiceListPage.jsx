@@ -2,7 +2,6 @@ import React from 'react';
 import './ServiceListPage.css';
 import { makeStyles } from '@material-ui/core/styles';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({

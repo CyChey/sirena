@@ -13,7 +13,7 @@ const HomePage = (props) => (
 
         <div className="vistUs"
             style={{
-                backgroundColor: '#758B71',
+                backgroundColor: '#ced0ca',
                 opacity: '70%',
                 color: '#F2E5D6',
                 paddingTop: 20,
@@ -22,7 +22,7 @@ const HomePage = (props) => (
         >
             <div className="anotherCard"
                 style={{
-                    backgroundColor: '#758B71',
+                    backgroundColor: '#ced0ca',
                     padding: 10
                 }}
             >

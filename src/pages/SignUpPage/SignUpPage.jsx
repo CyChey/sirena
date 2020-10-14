@@ -16,7 +16,7 @@ class SignupPage extends Component {
         return (
             <div className='SignupPage'>
                 <Helmet>
-                    <style>{'body { background-color: #557050; }'}</style>
+                    <style>{'body { background-color: #e3e2e1; }'}</style>
                 </Helmet>
                 <Typography className="loginTitle">Sign up to schedule an appointment</Typography>
                 <SignupForm {...this.props} updateMessage={this.updateMessage} />

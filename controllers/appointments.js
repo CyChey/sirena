@@ -11,11 +11,13 @@ module.exports = {
 
 //index 
 async function index(req, res) {
+    console.log('Getting appointments');
     try {
         const appointments = await Appointment.find({ user: req.user._id }).populate('user');
         res.status(200).json(appointments);
     }
     catch (err) {
+        console.log(err);
         res.status(500).json(err);
     }
 }
@@ -29,6 +31,7 @@ async function create(req, res) {
         const appointment = await Appointment.create(req.body);
     }
     catch (err) {
+        console.log(err);
         res.status(500).json(err);
     }
 }

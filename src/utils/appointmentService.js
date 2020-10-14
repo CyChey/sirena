@@ -5,12 +5,15 @@ const BASE_URL = '/appointments/';
 // index
 export function getAllAppointments() {
     console.log('Getting appointments', tokenService.getTokenFromLocalStorage());
+    const headers = {
+        'Content-Type': 'application/json',
+    }
+    if (tokenService.getTokenFromLocalStorage()) {
+        headers['Authorization'] = tokenService.getTokenFromLocalStorage();
+    }
     return fetch(BASE_URL, {
         method: 'GET',
-        headers: {
-            'Content-type': 'application/json',
-            'Authorization': `Bearer ${tokenService.getTokenFromLocalStorage()}`
-        }
+        headers,
     })
         .then(allAppointments => allAppointments.json())
         .catch(e => {

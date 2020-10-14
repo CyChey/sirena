@@ -1,22 +1,46 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import AppBar from '@material-ui/core/AppBar'
 import './NavBar.css';
 
 const NavBar = (props) => {
     let nav = props.user ?
-        <div>
-            <Link to='' className='NavBar'
-                position="fixed" onClick={props.handleLogout}>LOG OUT</Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-            <span className='NavBar-welcome'>WELCOME, {props.user.name}</span>
-        </div>
+        <>
+            <AppBar
+                className="NavBar"
+                position="fixed"
+                style={{
+                    top: "auto",
+                    bottom: 0,
+                    backgroundColor: "#E4CAB0",
+                    display: "inline-block",
+                    height: "5%",
+                    paddingTop: "1.5vh",
+                }}>
+                <NavLink exact to='/home' onClick={props.handleLogout} color="primary" >LOGOUT</NavLink>
+                <NavLink exact to='/services' >SERVICES</NavLink>
+                <NavLink exact to='/profile'>PROFILE</NavLink>
+                <NavLink exact to='/home'>HOME</NavLink>
+            </AppBar>
+        </>
         :
-        <div>
-            <Link to='/' className="NavBar-link">Home</Link>
-            <Link to='/login' className='NavBar-link'>LOG IN</Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;
-      <Link to='/signup' className='NavBar-link'>SIGN UP</Link>
-        </div>;
+        <>
+            <AppBar
+                className="NavBar"
+                position="fixed"
+                style={{
+                    top: "auto",
+                    bottom: 0,
+                    backgroundColor: "#E4CAB0",
+                    display: "inline-block",
+                    height: "5%",
+                    paddingTop: "1.5vh",
+                }}>
+                <NavLink exact to='/signup'>SIGNUP</NavLink>
+                <NavLink exact to='/login'>LOGIN</NavLink>
+                <NavLink exact to='/home'>HOME</NavLink>
+            </AppBar>
+        </>;
 
     return (
         <div className='NavBar'>

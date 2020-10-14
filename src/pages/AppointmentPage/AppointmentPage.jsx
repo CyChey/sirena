@@ -5,7 +5,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import './AppointmentForm.css';
+import './AppointmentPage.css';
+
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: theme.spacing(1),
         minWidth: 10,
-        color: '#758B71'
+        color: '#1c788f'
     },
 }));
 
@@ -49,7 +50,7 @@ export default function AppointmentForm(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        this.props.handleAddAppointment(formData)
+        props.handleAddAppointment(formData)
     }
 
     return (
@@ -57,7 +58,7 @@ export default function AppointmentForm(props) {
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#758B71"
+                        color: "#1c788f"
                     }}>When would you like to schedule your appointment?</Typography>
                 <TextField
                     id="datetime-local"
@@ -75,7 +76,7 @@ export default function AppointmentForm(props) {
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#758B71"
+                        color: "#1c788f"
                     }}>What service are your booking?</Typography>
                 <Select
                     className="form1"
@@ -89,13 +90,15 @@ export default function AppointmentForm(props) {
                     name="service"
                     required
                 >
-                    {/* menu items  */}
+                    <MenuItem>
+                    </MenuItem>
+
                 </Select>
             </div>
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#758B71"
+                        color: "#1c778f"
                     }}>Anything else we should know?</Typography>
                 <TextField
                     name="notes"
@@ -106,6 +109,9 @@ export default function AppointmentForm(props) {
             <Button
                 type="submit"
                 variant="outlined"
+                style={{
+                    marginTop: 15,
+                }}
             >
                 SUBMIT</Button>
         </form>

@@ -16,7 +16,7 @@ function Profile({ appointmentsFromParent, handleDeleteAppointment }) {
             </div>
             <div>
                 <Typography
-                    style={{ color: '#758B71' }}
+                    style={{ color: '#1c788f' }}
                     className="upcoming"
                 >UPCOMING APPOINTMENTS</Typography>
                 {appointmentsFromParent.map(appointment =>

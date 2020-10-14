@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Helmet } from "react-helmet";
-import SignupForm from '../../components/SignUpForm/SignupForm';
+import SignupForm from '../../components/SignUpForm/SignUpForm';
 import Typography from '@material-ui/core/Typography';
 import './SignUpPage.css';
 

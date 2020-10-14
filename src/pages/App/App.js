@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import ServiceListPage from '../ServiceListPage/ServiceListPage';
 import * as appointmentService from '../../utils/appointmentService';
-import SignupPage from '../SignupPage/sign-up-page';
+import SignupPage from '../SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import EditAppointmentPage from '../EditAppointmentPage/EditAppointmentPage';
 import userService from '../../utils/userService';

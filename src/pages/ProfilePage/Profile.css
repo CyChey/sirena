@@ -1,3 +1,5 @@
+
+
 .upcoming {
     display: flex;
     padding-top: 5vh;
@@ -11,4 +13,21 @@
     padding-top: 15vh;
     padding-right: 3vw;
     color: #1c788f;
+}
+
+.deleteBtn {
+    color: #1c788f;
+    border: 1px solid #1c788f;
+    border-radius: 10px;
+    background-color: #e3e2e1;
+    padding: 3px 5px;
+}
+
+.updateBtn {
+    color: #1c788f;
+    border: 1px solid #1c788f;
+    background-color: #e3e2e1;
+    border-radius: 10px;
+    padding: 3px 5px;
+    text-decoration: none;
 }

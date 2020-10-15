@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: theme.spacing(1),
         minWidth: 10,
-        color: '#758B71'
+        color: '#1c788f'
     },
 }));
 
@@ -57,7 +57,7 @@ export default function AppointmentForm(props) {
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#758B71"
+                        color: "#1c788f"
                     }}>When would you like to schedule your appointment?</Typography>
                 <TextField
                     id="datetime-local"

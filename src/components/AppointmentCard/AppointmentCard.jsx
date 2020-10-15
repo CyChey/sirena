@@ -36,7 +36,7 @@ function AppointmentCard({ appointmentFromParent, handleDeleteAppointment }) {
                 className={classes.root}
                 variant="outlined"
                 style={{
-                    backgroundColor: '#E4CAB0',
+                    backgroundColor: '#e3e2e1',
                     margin: '10%',
                 }}
             >

@@ -4,14 +4,14 @@ import AppointmentCard from '../../components/AppointmentCard/AppointmentCard';
 import Typography from '@material-ui/core/Typography';
 import './Profile.css';
 
-function Profile({ appointmentsFromParent, handleDeleteAppointment }) {
+function Profile({ appointmentsFromParent = [], handleDeleteAppointment }) {
     return (
         <>
             <div className="profileBanner">
                 <Typography
                     className="profileName"
                     variant="h5"
-                    style={{ color: '#F2E5D6' }}
+                    style={{ color: '#1c788f' }}
                 >{userService.getUser().name ? `HELLO, ${userService.getUser().name.toUpperCase()}` : ''}</Typography>
             </div>
             <div>
@@ -19,7 +19,7 @@ function Profile({ appointmentsFromParent, handleDeleteAppointment }) {
                     style={{ color: '#1c788f' }}
                     className="upcoming"
                 >UPCOMING APPOINTMENTS</Typography>
-                {appointmentsFromParent.map(appointment =>
+                {Array.isArray(appointmentsFromParent) && appointmentsFromParent.map(appointment =>
                     <AppointmentCard
                         key={appointment._id}
                         appointmentFromParent={appointment}

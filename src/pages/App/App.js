@@ -18,51 +18,43 @@ class App extends Component {
     services: [
       {
         _id: 1,
-        type: 'Massage',
-        cost: '$150',
-        time: '60 mins'
+        type: 'Haircut Only',
+        cost: '$35',
+        time: '30 mins'
       },
       {
         _id: 2,
-        type: 'Hair cut',
-        cost: '$80',
-        time: '90 mins'
+        type: 'Haircut W/ Style',
+        cost: '$65',
+        time: '45 mins'
       },
       {
         _id: 3,
-        type: 'Pedicure',
-        cost: '$50',
-        time: '30 mins'
+        type: 'Bang Trim',
+        cost: '$10',
+        time: '10 mins'
       },
       {
         _id: 4,
-        type: 'Manicure',
-        cost: '$50',
-        time: '30 mins'
+        type: 'Eyebrow Wax',
+        cost: '$10',
+        time: '10 mins'
       },
       {
         _id: 5,
-        type: 'Hot stone massage',
-        cost: '$150',
-        time: '60 mins'
+        type: 'Lip Wax',
+        cost: '$10',
+        time: '10 mins'
       },
       {
         _id: 6,
-        type: 'Signature facial',
-        cost: '$90',
-        time: '60 mins'
-      },
-      {
-        _id: 7,
-        type: 'Reflexology',
-        cost: '$80',
-        time: '60 mins'
+        type: 'Leg Wax',
+        cost: '$30',
+        time: '20 mins'
       },
     ],
     user: userService.getUser(),
-
-    appointments: [
-    ]
+    appointments: []
   }
 
   handleLogout = () => {

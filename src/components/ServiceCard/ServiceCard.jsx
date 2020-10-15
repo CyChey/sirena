@@ -25,9 +25,9 @@ function ServiceCard({ serviceFromParent }) {
         <Paper
             className={classes.root}
             style={{
-                backgroundColor: '#758B71',
+                backgroundColor: '#CED0CA',
                 margin: '5%',
-                color: '#E4CAB0'
+                color: '#1C788F'
             }}
         >
             <CardContent>
@@ -43,7 +43,7 @@ function ServiceCard({ serviceFromParent }) {
                 <NavLink
                     className="bookBtn"
                     exact to='/appointment'
-                >BOOK</NavLink>
+                >Book</NavLink>
             </CardActions>
         </Paper>
     )

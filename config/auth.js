@@ -5,7 +5,7 @@ module.exports = function (req, res, next) {
     // Check for the token being sent in three different ways
     let fullTokenString = req.get('Authorization') || req.query.token || req.body.token;
     if (!fullTokenString) {
-        next('No token sent');
+        next();
     } else {
         let parsedTokenString = fullTokenString.replace(/^(Bearer )/, '');
         if (parsedTokenString) {
@@ -25,4 +25,5 @@ module.exports = function (req, res, next) {
             next('No token sent');
         }
     }
+
 };

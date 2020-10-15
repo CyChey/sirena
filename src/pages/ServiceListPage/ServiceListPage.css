@@ -1,0 +1,18 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');
+    background-size: cover;  
+}
+
+
+.bookBtn {
+    color: #1c788f;
+    background-color: #ebe6dd;
+    border: 1px solid #1c788f;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    align-items: center;
+    display: flex;
+    height: 3vh;
+}
+

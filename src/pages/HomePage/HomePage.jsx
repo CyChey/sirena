@@ -23,18 +23,27 @@ const HomePage = (props) => (
             <div className="anotherCard"
                 style={{
                     backgroundColor: '#ced0ca',
-                    padding: 10
+                    padding: 10,
+                    color: '#1c788f'
                 }}
             >
                 <Typography>
-                    {/* contact info */}
+                    Contact Us At (555)555-5555
                 </Typography>
                 <Typography>
-                    {/* title for hours */}
+                    Hours
                 </Typography>
                 <Typography>
-                    {/* hours */}
+                    Monday-Friday 10am-5pm
                 </Typography>
+                <Typography>
+                    Saturday 11am-5pm
+                </Typography>
+                <Typography>
+                    Sunday CLOSED
+                </Typography>
+
+
             </div>
             <div
                 style={{

@@ -1,0 +1,13 @@
+.NavBar > a {
+    text-decoration: none;
+    padding: .5vh;
+    width: 20vw;
+    height: 1vh;
+    border: 1px solid #e3e2e1;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: #e3e2e1;
+    color: #1c788f;
+    font-size: 20px;
+}
+

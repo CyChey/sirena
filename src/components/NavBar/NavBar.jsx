@@ -12,7 +12,7 @@ const NavBar = (props) => {
                 style={{
                     top: "auto",
                     bottom: 0,
-                    backgroundColor: "#E4CAB0",
+                    backgroundColor: "#e3e2e1",
                     display: "inline-block",
                     height: "5%",
                     paddingTop: "1.5vh",
@@ -31,7 +31,7 @@ const NavBar = (props) => {
                 style={{
                     top: "auto",
                     bottom: 0,
-                    backgroundColor: "#E4CAB0",
+                    backgroundColor: "#e3e2e1",
                     display: "inline-block",
                     height: "5%",
                     paddingTop: "1.5vh",

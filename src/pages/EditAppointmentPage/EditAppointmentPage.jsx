@@ -31,7 +31,7 @@ class EditAppointmentPage extends Component {
                 <div className="formSections">
                     <Typography
                         style={{
-                            color: "#758B71"
+                            color: "#1c788f"
                         }}>When would you like to schedule your appointment?</Typography>
                     <TextField
                         id="datetime-local"
@@ -47,7 +47,7 @@ class EditAppointmentPage extends Component {
                 <div className="formSections">
                     <Typography
                         style={{
-                            color: "#758B71"
+                            color: "#1c788f"
                         }}>What service are your booking?</Typography>
                     <Select
                         className="form1"
@@ -61,18 +61,18 @@ class EditAppointmentPage extends Component {
                     >
                         <MenuItem>
                         </MenuItem>
-                        <MenuItem value="massage">Reflexology Treatment</MenuItem>
-                        <MenuItem value="stone massage">Hot Stone Therapy Massage</MenuItem>
-                        <MenuItem value="haircut">Hair cut</MenuItem>
-                        <MenuItem value="facial">Facial</MenuItem>
-                        <MenuItem value="pedicure">Pedicure</MenuItem>
-                        <MenuItem value="manicure">Manicure</MenuItem>
+                        <MenuItem value="haircut">Haircut Only</MenuItem>
+                        <MenuItem value="haircutStyle">Haircut W/ Style</MenuItem>
+                        <MenuItem value="bangs">Bang Trim</MenuItem>
+                        <MenuItem value="eyebrows">Eyebrow Wax</MenuItem>
+                        <MenuItem value="lips">Lip Wax</MenuItem>
+                        <MenuItem value="legs">Leg Wax</MenuItem>
                     </Select>
                 </div>
                 <div className="formSections">
                     <Typography
                         style={{
-                            color: "#758B71"
+                            color: "#1c788f"
                         }}>Anything else we should know?</Typography>
                     <TextField
                         name="notes"

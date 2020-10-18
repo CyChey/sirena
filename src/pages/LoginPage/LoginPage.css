@@ -3,13 +3,14 @@
     flex-flow: column nowrap;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 25vh;
     background-color: #e3e2e1;
+    opacity: 90%;
 
 }
 
 .form-control {
-    border: none;
+    border: 1px solid;
 }
 
 .loginTitle {
@@ -18,11 +19,15 @@
 
 .loginBtn {
     margin-top: 1vh;
-    border: 1px solid black;
-    padding: 2px 5px;
-
+    margin-left: 5vh;
+    border: 1px solid #CED0CA;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .form-group {
-    margin: 10px;
+    margin: 15px;
 }
+
+  

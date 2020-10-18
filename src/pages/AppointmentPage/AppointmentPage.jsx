@@ -58,7 +58,7 @@ export default function AppointmentForm(props) {
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#758B71"
+                        color: "#1c788f"
                     }}>When would you like to schedule your appointment?</Typography>
                 <TextField
                     id="datetime-local"
@@ -76,7 +76,7 @@ export default function AppointmentForm(props) {
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#758B71"
+                        color: "#1c788f"
                     }}>What service are your booking?</Typography>
                 <Select
                     className="form1"
@@ -103,7 +103,7 @@ export default function AppointmentForm(props) {
             <div className="formSections">
                 <Typography
                     style={{
-                        color: "#758B71"
+                        color: "#1c788f"
                     }}>Anything else we should know?</Typography>
                 <TextField
                     name="notes"
@@ -116,6 +116,7 @@ export default function AppointmentForm(props) {
                 variant="outlined"
                 style={{
                     marginTop: 15,
+                    marginBottom: 15
                 }}
             >
                 SUBMIT</Button>
